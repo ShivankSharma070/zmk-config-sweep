@@ -48,6 +48,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <220>;
         };
     };
 
@@ -124,7 +125,7 @@
             bindings = <
 &trans  &trans  &trans      &trans       &trans    &kp HOME    &kp PAGE_DOWN   &kp PG_UP     &kp END    &trans
 &trans  &trans  &kp K_COPY  &kp K_PASTE  &trans    &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT  &trans
-&mo 5   &trans  &trans      &trans       &trans    &trans      &msc SCRL_DOWN  &msc SCRL_UP  &trans     &trans
+&to 5   &trans  &trans      &trans       &trans    &trans      &msc SCRL_DOWN  &msc SCRL_UP  &trans     &trans
                             &trans       &trans    &kp DELETE  &tmux_leader
             >;
         };
@@ -134,7 +135,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
 &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &trans
-                        &mo 0   &trans    &mkp MB1        &mkp MB2
+                        &to 0   &trans    &mkp MB1        &mkp MB2
             >;
         };
     };
